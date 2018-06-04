@@ -1,6 +1,6 @@
 # repositorio1ffff
-pi=3.14
-r=int(input("Ingrese el radio:"))
+pi=3.141615
+r=int(input("Ingrese el radio del círculo:"))
 def area_del_circulo(r):
     return pi*(r**2)
 print(area_del_circulo(r))
