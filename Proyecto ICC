@@ -1,7 +1,10 @@
-# repositorio1ffff
-pi=3.141615
-r=int(input("Ingrese el radio del círculo:"))
+# repositorio1f
+pi=3.1416
+poligono= input("Círculo o elipse:")
+if 
+radio1=float(input("Ingrese el radio")
+radio2=float(input("Ingrese el radio del círculo:"))
 def area_del_circulo(r):
     return pi*(r**2)
 print(area_del_circulo(r))
-:v hagan algo amiguitos
+#:v hagan algo amiguitos
