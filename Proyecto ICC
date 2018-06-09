@@ -4,8 +4,12 @@ def operaciones():
 print(operaciones())
 pi=3.14159265359
 def area_de_circulo_y_elipse(r1,r2):
-    return pi*(r*r2)
-poligono= input("Círculo o elipse:")
+    area_circunferencia=pi*(r*r2)
+    return area_circunferencia
+def area_cuadrado_rectangulo(L1,L2):
+    area_rec_cua=L1*L2
+    return area_rec_cua
+poligono= input()
 if poligono.upper()=="CIRCULO" or poligono.upper()=="CÍRCULO":
     radio_circulo=float(input("Ingrese el radio de la circunferencia:"))
     print("El área de la circunferencia es:", round(area_de_circulo_y_elipse(radio_circulo,radio_circulo),2))
@@ -13,6 +17,13 @@ elif poligono.upper()=="ELIPSE":
     radio1_elipse=float(input("Ingrese el radio mayor:"))
     radio2_elipse=float(input("Ingrese el radio menor:"))
     print("El área de la elipse es:", round(area_de_circulo_y_elipse(radio1_elipse,radio2_elipse),2))
+elif poligono.upper()=="CUADRADO":
+    lado_cuadrado=float(input("Ingrese el lado del cuadrado":))
+    print("El área del cuadrado es:", round(area_cuadrado_rectangulo(lado_cuadrado,lado_cuadrado),2))
+elif poligono.upper()=="RECTANGULO" or poligono.upper()=="RECTÁNGULO":
+    ancho_rectangulo=float(input("Ingrese el ancho del rectángulo:"))
+    largo_rectangulo=float(input("Ingrese el largo del rectángulo:"))
+    print("El área del rectángulo es:", round(area_cuadrado_rectangulo(largo_rectángulo,ancho_rectángulo),2)
 #:v hagan algo amiguitos
 #Deneb se la come 
 #quien falta avanzar su parte??
