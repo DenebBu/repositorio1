@@ -1,21 +1,18 @@
 # repositorio1f
+def operaciones():
+    print("Área de polígonos")
+print(operaciones())
 pi=3.14159265359
+def area_de_circulo_y_elipse(r1,r2):
+    return pi*(r*r2)
 poligono= input("Círculo o elipse:")
-if polígono.upper()="CIRCULO":
-    radio1=float(input("Ingrese el radio de la primera circunferencia:"))
-    radio2=float(input("Ingrese el radio de la segunda circunferencia:"))
-elif polígono.upper()="ELIPSE":
-    print("No me sé la fórmula :(")
-def area_del_circulo(r):
-    return pi*(r**2)
-print("El área de la primera circunferencia es:", area_del_circulo(radio1))
-print("El área de la segunda circunferencia es:", area_del_circulo(radio2))
-if radio1>radio2:
-    print("El área de la primera circunferencia es mayor que el de la segunda")
-elif radio2>radio1:
-    print("El área de la segunda circunferencia es mayor que el de la primera")
-else:
-    print("las dos circunferencias tienen el mismo área")
+if poligono.upper()=="CIRCULO" or poligono.upper()=="CÍRCULO":
+    radio_circulo=float(input("Ingrese el radio de la circunferencia:"))
+    print("El área de la circunferencia es:", round(area_de_circulo_y_elipse(radio_circulo,radio_circulo),2))
+elif poligono.upper()=="ELIPSE":
+    radio1_elipse=float(input("Ingrese el radio mayor:"))
+    radio2_elipse=float(input("Ingrese el radio menor:"))
+    print("El área de la primera circunferencia es:", area_del_circulo(radio1 ")
 #:v hagan algo amiguitos
 #Deneb se la come 
 #quien falta avanzar su parte??
