@@ -12,7 +12,7 @@ if poligono.upper()=="CIRCULO" or poligono.upper()=="CÍRCULO":
 elif poligono.upper()=="ELIPSE":
     radio1_elipse=float(input("Ingrese el radio mayor:"))
     radio2_elipse=float(input("Ingrese el radio menor:"))
-    print("El área de la primera circunferencia es:", area_del_circulo(radio1 ")
+    print("El área de la elipse es:", round(area_de_circulo_y_elipse(radio1_elipse,radio2_elipse),2))
 #:v hagan algo amiguitos
 #Deneb se la come 
 #quien falta avanzar su parte??
