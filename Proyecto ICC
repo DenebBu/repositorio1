@@ -1,30 +1,42 @@
 # repositorio1f
-def operaciones():
-    print("Área de polígonos")
-print(operaciones())
+
+print("Área de polígonos")
 pi=3.14159265359
-def area_de_circulo_y_elipse(r1,r2):
-    area_circunferencia=pi*(r*r2)
-    return area_circunferencia
-def area_cuadrado_rectangulo(L1,L2):
-    area_rec_cua=L1*L2
-    return area_rec_cua
-poligono= input()
+poligono=input("¿De qué figura geométrica desea hallar el área?: ")
+
+def circulo(r):
+    a=pi*(r**2)
+    return a
+def elipse(m,n):
+    b=m*n*pi
+    return b
+def rectangulo(L1,L2):
+    c=L1*L2
+    return c
 if poligono.upper()=="CIRCULO" or poligono.upper()=="CÍRCULO":
-    radio_circulo=float(input("Ingrese el radio de la circunferencia:"))
-    print("El área de la circunferencia es:", round(area_de_circulo_y_elipse(radio_circulo,radio_circulo),2))
+    radio=float(input("Ingresar el radio de la circunferencia: "))
+    areaclo=circulo(radio)
+    print("El área de la circunferencia es:", round(areaclo,3))
 elif poligono.upper()=="ELIPSE":
-    radio1_elipse=float(input("Ingrese el radio mayor:"))
-    radio2_elipse=float(input("Ingrese el radio menor:"))
-    print("El área de la elipse es:", round(area_de_circulo_y_elipse(radio1_elipse,radio2_elipse),2))
+    radio1=float(input("Ingrese el primer radio:"))
+    radio2=float(input("Ingrese el segundo radio:"))
+    arealips=elipse(radio1,radio2)
+    print("El área de la elipse es:", round(arealips,3))
 elif poligono.upper()=="CUADRADO":
-    lado_cuadrado=float(input("Ingrese el lado del cuadrado":))
-    print("El área del cuadrado es:", round(area_cuadrado_rectangulo(lado_cuadrado,lado_cuadrado),2))
+    lado=float(input("Ingrese el lado del cuadrado:"))
+    areado=rectangulo(lado,lado)
+    print("El área del cuadrado es:", round(areado,3))
 elif poligono.upper()=="RECTANGULO" or poligono.upper()=="RECTÁNGULO":
-    ancho_rectangulo=float(input("Ingrese el ancho del rectángulo:"))
-    largo_rectangulo=float(input("Ingrese el largo del rectángulo:"))
-    print("El área del rectángulo es:", round(area_cuadrado_rectangulo(largo_rectángulo,ancho_rectángulo),2)
+    lado1=float(input("Ingrese el primer lado del rectángulo:"))
+    lado2=float(input("Ingrese el segundo lado del rectángulo:"))
+    areagulo=rectangulo(lado1,lado2)
+    print("El área del rectángulo es:", round(areagulo,3))
+else:
+    print("Figura geométrica incorrecta")
 #:v hagan algo amiguitos
 #Deneb se la come 
 #quien falta avanzar su parte??
+#Dejen de malograr el programa xd, así esta bien ya no lo modifiquen(verifiquenlo en phyton), hay que agregar otras funciones ps
+#sin malograr lo que ya hemos avanzado -_-
+
 
