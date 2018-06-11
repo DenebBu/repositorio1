@@ -4,6 +4,10 @@ print("Área de polígonos")
 pi=3.14159265359
 poligono=input("¿De qué figura geométrica desea hallar el área?: ")
 
+def triangulo(a,b):
+    z=(a*b)/2
+    return z
+
 def circulo(r):
     a=pi*(r**2)
     return a
@@ -31,12 +35,13 @@ elif poligono.upper()=="RECTANGULO" or poligono.upper()=="RECTÁNGULO":
     lado2=float(input("Ingrese el segundo lado del rectángulo:"))
     areagulo=rectangulo(lado1,lado2)
     print("El área del rectángulo es:", round(areagulo,3))
+elif poligono.upper()=="TRIANGULO" or poligono.upper()=="TRIÁNGULO":
+    base=float(input("Ingresa la base:"))
+    altura=float(input("Ingrese la altura:"))
+    atring=triangulo(base,altura)
+    print("El área del triángulo es:", round(atring,3))
 else:
     print("Figura geométrica incorrecta")
-#:v hagan algo amiguitos
-#Deneb se la come 
-#quien falta avanzar su parte??
-#Dejen de malograr el programa xd, así esta bien ya no lo modifiquen(verifiquenlo en phyton), hay que agregar otras funciones ps
-#sin malograr lo que ya hemos avanzado -_-
+
 
 
