@@ -62,6 +62,8 @@ if nombre_de_hombre(nombre)== False:
     print("Ese nombre no es de varon y deneb se la eat dubbed and subtittled")
 else:
     print(nombre_de_hombre(nombre), "Ese si es un nombre de varon")
+    
+#Diego villanueva hizo el program de arriba
 
 
 
