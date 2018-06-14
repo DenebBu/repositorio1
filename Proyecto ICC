@@ -42,6 +42,27 @@ elif poligono.upper()=="TRIANGULO" or poligono.upper()=="TRIÁNGULO":
     print("El área del triángulo es:", round(atring,3))
 else:
     print("Figura geométrica incorrecta")
+    
+print("------------------------------------------------")
+
+print("En el apartado de abajo encontrara un progrma que identifica los nombres de varones")
+def nombre_de_hombre(ptexto):
+
+    if ptexto == "Deneb":
+        return False
+    elif ptexto == "Denebbu":
+        return False
+    elif ptexto == "deneb":
+        return False
+    else:
+        return True
+
+nombre = input("Ingrese el nombre:")
+if nombre_de_hombre(nombre)== False:
+    print("Ese nombre no es de varon y deneb se la eat dubbed and subtittled")
+else:
+    print(nombre_de_hombre(nombre), "Ese si es un nombre de varon")
+
 
 
 
